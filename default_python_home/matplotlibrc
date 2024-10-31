@@ -1,0 +1,25 @@
+# axes
+axes.edgecolor : 27272a
+axes.facecolor : 18181b
+axes.prop_cycle: cycler('color', ['3b82f6', 'a855f7', '14b8a6', 'f43f5e', '0ea5e9', '0ea5e9', '0ea5e9', 'f43f5e', '06b6d4', '10b981'])
+axes.labelcolor : e4e4e7
+
+# figure
+figure.dpi : 300
+figure.edgecolor : 18181b
+figure.facecolor : 18181b
+
+# text
+text.color : f4f4f5
+font.family : DM Mono, monospace
+font.weight : 500
+
+# ticks
+xtick.color : a1a1aa
+ytick.color : a1a1aa
+xtick.labelcolor : f4f4f5
+ytick.labelcolor : f4f4f5
+
+# grid
+grid.alpha : 0.4
+grid.color : 71717a
