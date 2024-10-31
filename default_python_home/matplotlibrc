@@ -3,7 +3,7 @@
 # axes
 axes.edgecolor : 27272A
 axes.facecolor : 18181B
-axes.prop_cycle: 3B82F6, A855F7, 14B8A6, f43f5e, 0ea5e9, 0EA5E9, 0EA5E9, F43F5E, 06B6D4, 10B981
+axes.prop_cycle: 3B82F6, A855F7, 14B8A6, F43F5E, 0EA5E9, 0EA5E9, 0EA5E9, F43F5E, 06B6D4, 10B981
 axes.labelcolor : E4E4E7
 
 # figure
