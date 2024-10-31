@@ -94,7 +94,7 @@ export class PyodidePythonEnvironment implements PythonEnvironment {
         pyodide.setInterruptBuffer(this.interrupt);
 
         // second part of the import (also takes a latency hit), its ok to re-import packages
-        await pyodide.runPythonAsync("import matplotlib.pyplot as plt\nimport pandas as pd\nimport numpy as np\nimport sklearn as sk\nimport scipy as sc\nplt.style.use('./zinc.mplstyle')")
+        await pyodide.runPythonAsync("import matplotlib.pyplot as plt\nimport pandas as pd\nimport numpy as np\nimport sklearn as sk\nimport scipy as sc")
         console.log("Pyodide is loaded with packages imported")
         return Promise.resolve();
     }
