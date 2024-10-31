@@ -88,13 +88,13 @@ export class PyodidePythonEnvironment implements PythonEnvironment {
             pyodide.FS.writeFile(pyodide?.PATH.join2(pythonEnvironmentHomeDir, f.filename), f.byte_data);
         })
         // load the packages we commonly use to avoid the latency hit during the user req
-        await pyodide.loadPackage(["numpy", "matplotlib", "pandas"])
+        await pyodide.loadPackage(["numpy", "matplotlib", "pandas", "scikit-learn", "scipy"])
 
         // set interrupt buffer to allow for termination
         pyodide.setInterruptBuffer(this.interrupt);
 
         // second part of the import (also takes a latency hit), its ok to re-import packages
-        await pyodide.runPythonAsync("import matplotlib.pyplot as plt\nimport pandas as pd\nimport numpy as np")
+        await pyodide.runPythonAsync("import matplotlib.pyplot as plt\nimport pandas as pd\nimport numpy as np\nimport sklearn as sk\nimport scipy as sc")
         console.log("Pyodide is loaded with packages imported")
         return Promise.resolve();
     }
